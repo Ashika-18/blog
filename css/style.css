@@ -9,7 +9,6 @@ html, body {
 
 body {
     font-family: 'Gloock', serif;
-    /* background-color: rgb(255, 255, 255); */
     font-size: 1rem;
 }
 
@@ -281,65 +280,6 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     left: -1.5rem;
 }
 
-/* company */
-#company {
-    height: 47rem;
-    display: none;
-    /*display: flex;*/
-    align-items: center;
-    position: relative;   
-}
-
-#company .text {
-    width: 55%;
-    background-color: rgb(207, 207, 207);
-    padding: 6rem 8% 6rem 6%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#company .img {
-    width: 53%;
-    position: absolute;
-    top: 4rem;
-    right: 0;
-}
-
-#company .img img {
-    width: 100%;
-    height: 25rem;
-    object-fit: cover;
-}
-
-#company .info {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#company .info dt {
-    width: 20%;
-    margin-top: 1rem;
-}
-
-#company .info dt:first-of-type {
-    margin-top: 0;
-}
-
-#company .info dd {
-    width: 80%;
-    margin-top: 1rem;
-}
-
-#company .info dd:first-of-type {
-    margin-top: 0;
-}
-
-#company .info .add {
-    margin-left: 20%;
-}
-
 /* footer */
 #footer {
     padding-bottom: 0.5rem;
@@ -428,13 +368,25 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 /*  */
 @media screen and (max-width: 900px) {
+    #header nav ul {
+        display: none;
+      }
+      
+      #header .contact {
+        display: block;
+      }
+      
+      #header .logo {
+        display: none;
+      }
+      
+      #header #btn {
+        display: block !important;
+      }
+
     .logo {
         width: 5rem;
         margin-right: 0;
-    }
-
-    nav {
-        display: none;
     }
 
     .section_title {
@@ -523,49 +475,6 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
     #business .title {
         text-align: left;
-    }
-
-    /* company */
-    #company {
-        height: auto;
-        flex-direction: column;
-        position: static;
-    }
-
-    #company .text {
-        width: 100%;
-        padding: 2.5rem 1.25rem;
-        margin-bottom: 2rem;
-        position: static;
-    }
-
-    #company .img {
-        width: 100%;
-        padding: 0;
-        position: static;
-    }
-
-    #company .info {
-        flex-direction: column;
-    }
-
-    #company .info dt {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    #company .info dd {
-        width: 100%;
-        margin-top: 0.5rem;
-        padding-left: 1rem;
-    }   
-
-    #company .info dd:first-of-type {
-        margin-top: 0.5rem;
-    }
-
-    #company .info .add {
-        margin-left: 0;
     }
 
     #footer .flex {

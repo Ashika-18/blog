@@ -27,8 +27,8 @@
                     <li><a href="#news">News</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#business">Business</a></li>
-                    <button id="btn">ダークモードにする</button>
                 </ul>
+                <button id="btn">ダークモードにする</button>
             </nav>
         </div>
         <a href="contact.php" class="contact">お問い合わせ</a>
@@ -132,32 +132,6 @@
                         <img src="./images/swift.webp" alt="swift">
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="company" class="wrapper">
-            <div class="text">
-                <h2 class="section_title">
-                    <span class="en">COMPANY</span>
-                    <span class="ja">会社情報</span>
-                </h2>
-
-                <dl class="info">
-                    <dt>会社名</dt>
-                    <dd>Webエンターテイメントデザイン（株）</dd>
-                    <dt>所在地</dt>
-                    <dd>東京都渋谷区桜丘町99-9</dd>
-                    <dt>代表</dt>
-                    <dd>Ashika</dd>
-                    <dt>事業内容</dt>
-                    <dd>Web制作・マーケティング</dd>
-                    <dd class="add">インターネット事業</dd>
-                    <dd class="add">プロモーション企画・制作</dd>
-                </dl>
-            </div>
-
-            <div class="img">
-                <img src="./images/bora.jpg" alt="">
             </div>
         </section>
     </main>
