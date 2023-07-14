@@ -380,10 +380,6 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
         display: none;
       }
       
-      #header #btn {
-        display: block !important;
-      }
-
     .logo {
         width: 5rem;
         margin-right: 0;
