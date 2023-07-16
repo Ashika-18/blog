@@ -27,8 +27,8 @@
                     <li><a href="#news">News</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#business">Business</a></li>
+                    <button id="btn">ダークモードにする</button>
                 </ul>
-                <button id="btn">ダークモードにする</button>
             </nav>
         </div>
         <a href="contact.php" class="contact">お問い合わせ</a>

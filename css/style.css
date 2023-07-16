@@ -368,7 +368,7 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 /*  */
 @media screen and (max-width: 900px) {
-    #header nav ul {
+    #header nav li {
         display: none;
       }
       
