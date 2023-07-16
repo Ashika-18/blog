@@ -55,6 +55,21 @@ img {
     margin-bottom: 3rem;
 }
 
+/* スクロールに擬似要素 */
+.scroll {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.scroll::before {
+    background-color: rgb(14, 136, 201);
+    position: absolute;
+    content: '';
+    display: block;
+    inset: 0;
+}
+
 /* 擬似要素で下線を引く */
 .section_title::after {
     content: '';

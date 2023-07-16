@@ -47,7 +47,7 @@
 
         <section id="news" class="wrapper">
             <h2 class="section_title">
-                <span class="en">NEWS</span>
+                <span class="en scroll">NEWS</span>
                 <span class="ja">ニュース</span>
             </h2>
 
@@ -78,11 +78,11 @@
 
         <section id="about" class="wrapper">
             <div class="img">
-                <img src="./images/PC.jpg" alt="about画像">
+                <img class="about-img" src="./images/PC.jpg" alt="about画像">
             </div>
             <div class="text">
                 <h2 class="section_title">
-                    <span class="en">ABOUT</span>
+                    <span class="en scroll">ABOUT</span>
                     <span class="ja">私について</span>
                 </h2>
                 <p>
@@ -107,7 +107,7 @@
         <section id="business" class="wrapper">
             <div class="section_title">
                 <h2>
-                    <span class="en">BUSINESS</span>
+                    <span class="en scroll">BUSINESS</span>
                     <span class="ja">事業内容</span>
                 </h2>
             </div>
