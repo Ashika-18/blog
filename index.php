@@ -115,21 +115,21 @@
                 <div class="left">
                     <div class="item">
                         <p class="title">HTML&CSS</p>
-                        <img src="images/HTML CSS.jpg" alt="html">
+                        <img class="item-img" src="images/HTML CSS.jpg" alt="html">
                     </div>
                     <div class="item">
                         <p class="title">JavaScript</p>
-                        <img src="images/javascript.jpg" alt="javascript">
+                        <img class="item-img" src="images/javascript.jpg" alt="javascript">
                     </div>
                 </div>
                 <div class="right">
                     <div class="item">
                         <p class="title">PHP</p>
-                        <img src="./images/php.jpg" alt="PHP">
+                        <img class="item-img" src="./images/php.jpg" alt="PHP">
                     </div>
                     <div class="item">
                         <p class="title">Swift</p>
-                        <img src="./images/swift.webp" alt="swift">
+                        <img class="item-img" src="./images/swift.webp" alt="swift">
                     </div>
                 </div>
             </div>

@@ -19,7 +19,7 @@ var playId = 0;
 var slideShow = function () {
     if (playId === 0) {
         document.getElementById('play').innerHTML = 'STOP';
-        playId = setInterval(changePic, 1000);
+        playId = setInterval(changePic, 2000);
     }
     else {
         document.getElementById('play').innerHTML = 'START';
@@ -112,8 +112,21 @@ aboutImg.addEventListener('click', () => {
 });
 
 //item画像
-const items = document.querySelectorAll('.item');
+const items = document.querySelectorAll('.item-img');
 
+items.forEach((item, index) => {
+    item.animate(
+    {
+        opacity: [0, 1],
+        rotate: ['y 90deg', 0],
+    },
+    {
+        duration: 2000,
+        delay: [index] * 300,
+        fill: 'forwards',
+    },
+    );
+});
 
 
 //準備完了
