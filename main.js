@@ -114,20 +114,32 @@ aboutImg.addEventListener('click', () => {
 //item画像
 const items = document.querySelectorAll('.item-img');
 
-items.forEach((item, index) => {
-    item.animate(
-    {
-        opacity: [0, 1],
-        rotate: ['y 90deg', 0],
-    },
-    {
-        duration: 2000,
-        delay: [index] * 300,
-        fill: 'forwards',
-    },
-    );
-});
+//監視対象が範囲内に入ったら実行する
+const showItem = (entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.animate(
+                {
+                    rotate: ['x 90deg', '0'],
+                },
+                {
+                    duration: 2000,
+                    easing: 'ease',
+                    fill: 'forwards',
+                },
+            );
+            scrollObserver.unobserve(entry.target);
+        }
+    });
+};
 
+//監視ロボットの設定
+const itemOgserver = new IntersectionObserver(showItem);
+
+//.item-imgを監視するように指示
+items.forEach((item, index) => {
+    itemOgserver.observe(item);
+})
 
 //準備完了
 console.log('-STANDBY-')
