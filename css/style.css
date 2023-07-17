@@ -146,7 +146,8 @@ img {
     position: relative;
 }
 
-#top_title p {
+/* タイトル */
+.animation_js {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -156,8 +157,8 @@ img {
     font-weight: bold;
     color: antiquewhite;
     text-shadow: 2px 2px 0 rgb(56, 54, 54);
+    display: inline-block;
 }
-
 /*
 メインビジュアルを画面の高さに合わせる
 headerの高さが80pxあるので、100vhから80px分だけマイナスする

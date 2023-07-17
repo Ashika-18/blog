@@ -41,8 +41,19 @@ window.addEventListener('load', () => {
             duration: 2000,
             easing: 'ease',
             fill: 'forwards',
-        },
-        );
+        },);
+});
+
+//タイトルにカーソルが重なったら
+const heading = document.querySelector('.animation_js');
+
+heading.addEventListener('mouseover', () => {
+    heading.animate({
+        rotate: ['x 360deg', 0],
+    },
+    {
+        duration: 2000,
+    });
 });
 
 //scroll擬似要素

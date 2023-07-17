@@ -38,7 +38,7 @@
         <div id="mainvisual">
             <img id="pics" class="img" src="./images/朝日.jpg" alt="">
             <h2 id="top_title">
-                <p>Ashika Work</p>
+                <p class="animation_js">Ashika Work</p>
             </h2>
             <div class="play">
                 <button id="play" onclick="slideShow();">PLAY</button>
