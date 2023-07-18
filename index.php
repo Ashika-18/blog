@@ -24,9 +24,9 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#business">Business</a></li>
+                    <li class="nav_lists"><a href="#news">News</a></li>
+                    <li class="nav_lists"><a href="#about">About</a></li>
+                    <li class="nav_lists"><a href="#business">Business</a></li>
                     <button id="btn">ダークモードにする</button>
                 </ul>
             </nav>
@@ -52,21 +52,21 @@
             </h2>
 
             <ul class="list">
-                <li>
+                <li class="news_list">
                     <div class="date_area">
                         <time datetime="2023-1-2">2022.12.04</time>
                         <span>Press</span>
                     </div>
                     <p><a href="https://github.com/Ashika-18">GitHubアカウントです!</a></p>
                 </li>
-                <li>
+                <li class="news_list">
                     <div class="date_area">
                         <time datetime="2022-12-30">2022.12.01</time>
                         <span>Press</span>
                     </div>
                     <p><a href="https://coconala.com/services/2550383">ココならアカウントです!</a></p>
                 </li>
-                <li>
+                <li class="news_list">
                     <div class="date_area">
                         <time datetime="2022-10-15">2022.10.15</time>
                         <span>News</span>

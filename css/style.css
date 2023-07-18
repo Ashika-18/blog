@@ -55,6 +55,13 @@ img {
     margin-bottom: 3rem;
 }
 
+/* nav liに重なったら */
+.nav_lists:hover {
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /* スクロールに擬似要素 */
 .scroll {
     position: relative;
@@ -226,6 +233,11 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
     text-align: center;
 }
 
+/* liに重なったら */
+.news_list:hover {
+    background-color: darkgray;
+}
+
 /* about */
 #about {
     display: flex;
@@ -395,6 +407,10 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 
 /*  */
 @media screen and (max-width: 900px) {
+    #btn {
+        background: rgb(0, 255, 221);
+    }
+
     #header nav li {
         display: none;
       }
