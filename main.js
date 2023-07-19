@@ -1,5 +1,6 @@
 //ローディングから画面遷移
 const loadingAreaGrey = document.querySelector('#loading');
+const loadingAreaGreen = document.querySelector('#loading_screen');
 
 window.addEventListener('load', () => {
     loadingAreaGrey.animate(
@@ -14,8 +15,57 @@ window.addEventListener('load', () => {
             fill: 'forwards',
         },
     );
+    //ローディング中(緑色スクリーン)
+    loadingAreaGreen.animate(
+        {
+            translate: ['0 100vh', '0 0', '0 -100vh'],
+        },
+        {
+            duration: 2000,
+            delay: 800,
+            easing: 'ease',
+            fill: 'forwards',
+        },
+    );
 });
 
+//loadingアイコン
+// progressbar.js@1.0.0 version is used
+// Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+var bar = new ProgressBar.Circle(container, {
+    color: '#aaa',
+    // This has to be the same size as the maximum width to
+    // prevent clipping
+    strokeWidth: 4,
+    trailWidth: 1,
+    easing: 'easeInOut',
+    duration: 1400,
+    text: {
+      autoStyleContainer: false
+    },
+    from: { color: '#aaa', width: 1 },
+    to: { color: '#333', width: 4 },
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      circle.path.setAttribute('stroke-width', state.width);
+  
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+  
+    }
+  });
+  bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+  bar.text.style.fontSize = '2rem';
+  
+  bar.animate(1.0);  // Number from 0.0 to 1.0
+
+//topスライドショー 
 var picArray = [
     { src: './images/朝日.jpg' },
     { src: './images/昼.jpg' },
@@ -126,6 +176,7 @@ btn.addEventListener('click', () => {
 
 //aboutImg
 const aboutImg = document.querySelector('.about-img');
+const classTexts = document.querySelectorAll('.fadein');
 
 aboutImg.addEventListener('click', () => {
     aboutImg.animate(
@@ -138,6 +189,36 @@ aboutImg.addEventListener('click', () => {
             fill: 'forwards',
         },
     );
+});
+
+// aboutのテキストを浮かび上がらせる
+//監視対象が範囲内に現れたら実行する処理
+const showText = (entries) => {
+   entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+        entry.target.animate(
+                {
+                    opacity: [0, 1],
+                    filter: ['blur(.4rem)', 'blur(0)'],
+                    translate: ['0 4rem', 0],
+                },
+                {
+                    duration: 2000,
+                    easing: 'ease',
+                    fill: 'forwards',
+                },
+            );
+
+        }
+   });
+};
+
+//監視ロボットの設定
+const textOfserver = new IntersectionObserver(showText);
+
+//textのp要素を監視するように指示
+classTexts.forEach((classText) => {
+    textOfserver.observe(classText);
 });
 
 //item画像

@@ -54,7 +54,7 @@ img {
     line-height: 1;
     margin-bottom: 3rem;
 }
-
+/* ===========loading========== */
 /* ローディング画面 */
 #loading {
     background-color: #cccccc;
@@ -65,6 +65,33 @@ img {
     place-items: center;
 }
 
+/* 緑色のスクリーン */
+#loading_screen {
+    background-color: rgb(184, 230, 255);
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    translate: 0 100vh;
+}
+
+/* loadingアイコン */
+#container {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* 緑色のスクリーン非表示用のクラス */
+.green-screen-hide {
+    transform: translate(0, 100vh);
+    transition: transform 0.8s ease-out;
+  }
+  
+/* ==========nav========== */
 /* nav liに重なったら */
 .nav_lists:hover {
     background-color: darkgray;
@@ -246,6 +273,11 @@ headerの高さが80pxあるので、100vhから80px分だけマイナスする
 /* liに重なったら */
 .news_list:hover {
     background-color: darkgray;
+}
+
+/* aboutのp要素をふわっと表示させる */
+.fadein {
+    opacity: 0;
 }
 
 /* about */

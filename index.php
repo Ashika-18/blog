@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>MyBlog</title>
+    <!-- loadingアイコン -->
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.0.0/dist/progressbar.min.js"></script>
+    <!-- JavaScript -->
     <script src="main.js" defer></script>
 </head>
 <body>
     <!-- ローディング画面 -->
     <div id="loading">
+        <div id="container"></div>
         <div id="loading_screen"></div>
     </div>
     <!--header -->
@@ -86,20 +90,20 @@
                 <img class="about-img" src="./images/PC.jpg" alt="about画像">
             </div>
             <div class="text">
-                <h2 class="section_title">
-                    <span class="en scroll">ABOUT</span>
-                    <span class="ja">私について</span>
+                <h2 class="section_title fadein">
+                    <span class="en scroll fadein">ABOUT</span>
+                    <span class="ja fadein">私について</span>
                 </h2>
-                <p>
+                <p class="fadein">
                     現在は本業の傍らエンジニアをやっております。<br>
                     稼働時間<br>平日(月〜土) 1〜3時間程度<br>
                     日祝は4〜6時間程度                  
                 </p>
-                <p>
+                <p class="fadein">
                     HTML&CSS<br>PHP<br>Swift<br>JavaScript<br>
                     HP作成　LP作成等
                 </p>
-                <p>
+                <p class="fadein">
                     何でもお気軽にお問い合わせください！
                     <br>
                     1979-1-8<br>
