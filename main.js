@@ -1,3 +1,21 @@
+//ローディングから画面遷移
+const loadingAreaGrey = document.querySelector('#loading');
+
+window.addEventListener('load', () => {
+    loadingAreaGrey.animate(
+        {
+            opacity: [1, 0],
+            visibility: 'hidden',
+        },
+        {
+            duration: 2000,
+            delay: 1000,
+            easing: 'ease',
+            fill: 'forwards',
+        },
+    );
+});
+
 var picArray = [
     { src: './images/朝日.jpg' },
     { src: './images/昼.jpg' },

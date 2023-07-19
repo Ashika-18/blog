@@ -17,6 +17,11 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <div id="loading_screen"></div>
+    </div>
+    <!--header -->
     <header id="header">
         <div class="inner wrapper">
             <h1 class="logo">
