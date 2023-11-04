@@ -70,17 +70,10 @@
                 </li>
                 <li class="news_list">
                     <div class="date_area">
-                        <time datetime="2022-12-30">2022.12.01</time>
+                        <time datetime="2022-12-30">2022.7</time>
                         <span>Press</span>
                     </div>
-                    <p><a href="https://coconala.com/services/2550383">ココならアカウントです!</a></p>
-                </li>
-                <li class="news_list">
-                    <div class="date_area">
-                        <time datetime="2022-10-15">2022.10.15</time>
-                        <span>News</span>
-                    </div>
-                    <p><a href="https://crowdworks.jp/public/employees/5055973">CWアカウントです!</a></p>
+                    <p>webサイト開設</p>
                 </li>
             </ul>
         </section>

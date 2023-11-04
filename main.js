@@ -103,7 +103,7 @@ window.addEventListener('load', () => {
     title.animate(
         {
             opacity: [0, 1],
-            rotate: ['x 90deg', 0],
+            rotate: ['x 90deg', 'y 0deg'],
         },
         {
             duration: 2000,
@@ -117,7 +117,7 @@ const heading = document.querySelector('.animation_js');
 
 heading.addEventListener('mouseover', () => {
     heading.animate({
-        rotate: ['x 360deg', 0],
+        rotate: ['x 360deg', 'y 0deg'],
     },
     {
         duration: 2000,
@@ -181,7 +181,7 @@ const classTexts = document.querySelectorAll('.fadein');
 aboutImg.addEventListener('click', () => {
     aboutImg.animate(
         {
-            rotate: ['x 90deg', '0'],
+            rotate: ['x 90deg', 'y 0deg'],
         },
         {
             duration: 2000,
@@ -230,7 +230,7 @@ const showItem = (entries) => {
         if (entry.isIntersecting) {
             entry.target.animate(
                 {
-                    rotate: ['x 90deg', '0'],
+                    rotate: ['x 90deg', 'y 0deg'],
                 },
                 {
                     duration: 2000,
