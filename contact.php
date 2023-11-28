@@ -117,7 +117,14 @@ session_start();
         <label for="check">個人情報利用同意 [必須]</label>
         <input id="check" type="checkbox" name="check">
       </div>
-      <input class="btn btn-primary" type="submit" name="confirm" value="確認">
+      <div class="d-flex justify-content-center">
+        <div class="me-2">
+          <input class="btn btn-primary" type="submit" name="confirm" value="確認">
+        </div>
+        <div class="">
+          <button class="btn btn-info" type="button" onclick="location.href='index.php'">HOMEへ</button>
+        </div>
+      </div>
     </form>  
   <?php } else if( $mode == "confirm") { ?>
     <h1 class="text-center fs-1 mt-2 mb-2" style="color: green">確認画面</h1>
@@ -143,12 +150,18 @@ session_start();
           <?php echo $_SESSION['message']; ?>
         </div>
       </div>
-      <input class="btn btn-primary" type="submit" name="send" value="送信">
-      <input class="btn btn-danger" type="submit" name="back"  value="戻る">
+      <div class="d-flex justify-content-center">
+        <div class="me-2">
+          <input class="btn btn-primary" type="submit" name="send" value="送信">
+        </div>
+        <div>
+          <input class="btn btn-danger" type="submit" name="back"  value="戻る">
+        </div>
+      </div>
     </form>
   <?php } else { ?>
     <!-- 完了画面 -->
-    <h1 class="fs-1 text-center mt-2 mb-2">送信完了しました</h1>
+    <h1 class="fs-1 text-center mt-2 mb-2">お問い合わせ<br>ありがとうございました。</h1>
     <div class="d-flex justify-content-center mt-4">
       <button class="btn btn-info" type="button" onclick="location.href='index.php'">HOMEへ</button>
     </div>
