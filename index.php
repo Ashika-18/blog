@@ -129,10 +129,6 @@
                         <p class="title">PHP</p>
                         <img class="item-img" src="./images/php.jpg" alt="PHP">
                     </div>
-                    <div class="item">
-                        <p class="title">Swift</p>
-                        <img class="item-img" src="./images/swift.webp" alt="swift">
-                    </div>
                 </div>
             </div>
         </section>

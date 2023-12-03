@@ -1,0 +1,2 @@
+buildCommand: "composer install"  # PHPの場合、適切なコマンドを指定
+startCommand: "php index.php"     # PHPの実行コマンドを指定
